@@ -12,7 +12,7 @@ const Movie = () => {
   useEffect(() => {
     async function fetchMovie() {
       const response = await axios.get(
-        `http://www.omdbapi.com/?apikey=9c8a3160&i=${imdbID}`,
+        `https://www.omdbapi.com/?apikey=9c8a3160&i=${imdbID}`,
       );
       setMovie(response.data);
     }
